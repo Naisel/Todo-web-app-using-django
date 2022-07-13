@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(221, 248, 252);
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+.nav {
+    padding: auto;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(31, 62, 57);
+    height: 40px;
+    justify-content: space-between;
+}
+
+.nav-title{
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    color: rgb(105, 247, 108);
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+
+
+.nav-quote {
+    flex: 10;
+    color: rgb(105, 247, 108);
+    text-align: center;
+    
+}
+
+.nav-items{
+    flex: 1;
+    padding-right: 2%;
+    text-align: right;
+    
+}
+
+.nav-items a{
+    border-radius: 3px;
+    border-color: rgb(0, 0, 0);
+    border: 2px solid rgb(249, 215, 193);
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(84, 9, 149);
+    background-color: rgb(178, 252, 193);
+    width : 100px;
+
+}
+
+.nav-items a:hover {
+    color: rgb(4, 11, 88);
+    background-color: rgb(214, 171, 255);
+}
+
+
+
+
+.spnote {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    left: 70%;
+}
+
+.spnote-title {
+    color: rgb(1, 141, 87);
+    text-align: center;
+}
+
+.spnote-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.spnote-content textarea{
+    resize: vertical;
+    width: 300px;
+    min-height: 350px;
+}
+.todo {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    padding: 20px;
+    width: 700px;
+    border: 1px solid rgb(17, 134, 130);
+    border-radius: 4px;
+}
+
+.todo-nav {
+    font-size: large;
+    font-style: bold italic;
+    color: rgb(0, 139, 56);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+/* .todo-nav input {
+    color: rgb(84, 9, 149);
+    background-color: rgb(178, 252, 193);
+    border-radius: 3px;
+    border-color: rgb(249, 215, 193);
+    width: 60px;
+}
+
+.todo-nav input:hover {
+    color: rgb(4, 11, 88);
+    background-color: rgb(214, 171, 255);
+} */
+
+.todo-content {
+    display: flex;
+    flex-direction: column;
+    color: rgb(2, 59, 59);
+}
+
+.todo-content-task {
+    display: flex;
+}
+.todo-content-task a{
+    margin-left: 10px;
+}
+
+.todo-btn {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.todo-btn a{
+    border-radius: 3px;
+    border-color: rgb(0, 0, 0);
+    border: 2px solid rgb(249, 215, 193);
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(84, 9, 149);
+    background-color: rgb(178, 252, 193);
+    width : 100px;
+
+}
+
+.todo-btn a:hover {
+    color: rgb(4, 11, 88);
+    background-color: rgb(214, 171, 255);
+}
+
+
+
+

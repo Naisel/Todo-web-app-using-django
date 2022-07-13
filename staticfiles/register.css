@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin:  0 auto;
+    margin-top: 150px;
+
+}
+
+.register-title {
+    padding: 20px;
+    color: rgb(4, 193, 121);
+}
+
+.register-form {
+    color: rgb(14, 90, 147);
+    margin: 20px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.register-btn {
+    margin: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
