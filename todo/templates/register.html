@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'register.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-title">
+            TO DO APP
+        </div>
+        <div class="nav-items">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'register' %}">Register</a>
+            <a href="{% url 'home' %}#about">About</a>
+            <a href="{% url 'home' %}#help">Help</a>
+        </div>
+    </div>
+    <div class="register">
+        <div class="register-title">
+            <h4>ACCOUNT CREATION</h4>
+        </div>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="register-form">
+                <!-- {{form.as_p}} -->
+                <label for="">User Name</label>{{form.username}}
+                <!-- <label for="">Email</label>{{form.emailaddress}} -->
+                <label for="">Password</label>{{form.password1}}
+                <label for="">Confirm Password</label>{{form.password2}}
+            </div>
+            <div class="register-btn">
+                    <button>Register</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
