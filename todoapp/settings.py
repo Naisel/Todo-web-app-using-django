@@ -10,7 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+from math import prod
 from pathlib import Path
+import os
+import dj_database_url
+prod_db = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,7 +30,7 @@ SECRET_KEY = 'django-insecure-(xy+%&6lgm61nbk!23gti^v!9#q+smyu0xqj&$e^8-^=iyhlb^
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['127.0.0.1', 'todotask-webapp.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
